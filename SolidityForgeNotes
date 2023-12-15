@@ -110,3 +110,16 @@ cast call 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9 "retrieve()"
 we get the value 0x0000000000000000000000000000000000000000000000000000000000000045
 
 Then use cast --to-base 0x0000000000000000000000000000000000000000000000000000000000000045 to confirm the favorite number is 69.
+
+Next let's change our RPC URL to a testnet!
+
+Go to infura and set up a new api key, put the url into the env file as SEPOLIA_RPC_URL.
+
+ANYTIME you make changes to .env, run source .env
+The mempool:
+Where transactions temporarily live while they are waiting to be written on chain.
+
+Explore the alchemy offerings<3
+
+Verify your contracts on etherscan when you deploy them. (TBD)
+
