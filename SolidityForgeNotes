@@ -17,3 +17,15 @@ Now, to deploy contracts from forge:
 in the terminal, type forge create SimpleStorage --interactive
 Never use a private key in vscode, which might send data. If you need to deploy something with a private key, use your own bash terminal.
 
+you NEVER want to have your private key in plain text.
+Should not have private keys in shell or bash history
+We will learn proper private key safety in the future.
+
+We can also script deployment of our contracts. We want a continuous reproducable way to deploy our contracts, and we want future tests to test not just the code but the deployment process as well.
+
+we are creating the script DeploySimpleStorage.s.sol to deploy the SimpleStorage.sol smart contract.
+s.sol is a foundry convention for non smart contract solidity scripts.
+CHECK SOLIDITY SCRIPTING TUTORIALS IN FOUNDRY WEBSITE!
+
+In the lib folder are libraries of common scripts and tools used in Foundry. We will be using the script tool in the library for this deployment:
+
