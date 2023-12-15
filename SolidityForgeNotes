@@ -1,0 +1,19 @@
+We are going to store all of our contracts in the src directory.
+Test is where we'll put code to test what's in src 
+script is where we'll put code that interacts with our contract in src.
+foundry.toml let's us update config for foundry.
+
+We are turning on FormatOnSave to format as we go automatically in the vs code settings.
+use >format to format your code
+in the "out" directory, is a json file with all of the metadata about a transaction including ABI
+In Remix, we often deployed code to a remix VM. To do it in foundry:
+Begin a local evm environment deployment by using the anvil command in the terminal.
+
+Next let's study injecting a web3 provider. We're going to add the locally running anvil network to a browser metamask.
+Get the network info from anvil, open metamask then add custom network.
+Next in metamask you need to import account with the private key given by anvil
+
+Now, to deploy contracts from forge:
+in the terminal, type forge create SimpleStorage --interactive
+Never use a private key in vscode, which might send data. If you need to deploy something with a private key, use your own bash terminal.
+
